@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bilangan;
+
+    cout << "Masukkan bilangan: ";
+    cin >> bilangan;
+
+    int jumlah = bilangan;
+    cout << bilangan;
+
+    int pengurang = (bilangan % 2 == 0) ? bilangan - 2 : bilangan - 1;
+
+    while (pengurang >= 0) {
+        cout << " - " << pengurang;
+        jumlah -= pengurang;
+        pengurang -= 2;
+    }
+
+    cout << " = " << jumlah << endl;
+
+    return 0;
+}
